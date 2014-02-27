@@ -10,6 +10,9 @@ timeAngle.factory('Somethings', function () {
 		if ($.inArray(data, somethings) < 0) {
 			somethings.push(data);
 			localStorage.setItem('somethings', JSON.stringify(somethings));
+			return true;
+		} else {
+			return false;
 		}
 	};
 
