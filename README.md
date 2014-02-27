@@ -1,0 +1,3 @@
+# TimeAngle
+
+AngularJS time tracker

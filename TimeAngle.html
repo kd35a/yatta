@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="timeAngle">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>TimeAngle</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="http:////netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- AngularJS -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+	</head>
+	<body>
+		<div data-ng-controller="SomethingController" class="container">
+			<h1>Hello, World!</h1>
+			<div class="panel panel-default"><div class="panel-body">
+				<form data-ng-submit="addSomething()" role="form">
+					<div class="form-group">
+						<label for="newSomethingData">Add something:</label>
+						<input id="newSomethingData" type="text" data-ng-model="newSomething.data" class="form-control"/>
+					</div>
+					<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i>Add this</button>
+				</form>
+			</div></div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Your Somethings
+				</div>
+				<div class="panel-body">
+					<ul>
+						<li data-ng-repeat="something in somethings">{{ something }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Libs -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+		<!-- App stuff -->
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/factories.js"></script>
+	</body>
+</html>
