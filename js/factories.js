@@ -15,6 +15,9 @@ timeAngle.factory('Somethings', function () {
 			return false;
 		}
 	};
+	factory.clearAll = function () {
+		localStorage.setItem('somethings', '[]');
+	};
 
 	return factory;
 });

@@ -11,4 +11,9 @@ timeAngle.controller('SomethingController', function ($scope, Somethings) {
 			$('#newSomethingDataContainer').addClass('has-error');
 		}
 	};
+
+	$scope.clearSomethings = function () {
+		Somethings.clearAll();
+		$scope.somethings = Somethings.get();
+	};
 });
