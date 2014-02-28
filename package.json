@@ -1,0 +1,26 @@
+{
+  "name": "yatta",
+  "version": "0.0.0",
+  "description": "Yet Another Time Tracker (in AngularJS)",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kd35a/yatta.git"
+  },
+  "author": "Fredrik Strandin",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/kd35a/yatta/issues"
+  },
+  "homepage": "https://github.com/kd35a/yatta",
+  "dependencies": {
+    "express": "3.x",
+    "logfmt": "0.21.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
