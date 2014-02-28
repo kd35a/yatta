@@ -1,36 +1,42 @@
 <div class="container">
-	<h1>Hello, World!</h1>
-	<div class="panel panel-default"><div class="panel-body">
-		<form data-ng-submit="addSomething()" role="form"
-			name="addSomethingForm">
-			<div class="form-group" id="newSomethingDataContainer">
-				<label class="control-label" for="newSomethingData">
-					Add something:
-				</label>
-				<input id="newSomethingData" name="newSomethingData"
-					type="text" data-ng-model="newSomething.data"
-					class="form-control"/>
+	<div class="jumbotron">
+		<h1>Hello, World!</h1>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<form data-ng-submit="addSomething()" role="form"
+					name="addSomethingForm">
+					<div class="form-group" id="newSomethingDataContainer">
+						<label class="control-label" for="newSomethingData">
+							Add something:
+						</label>
+						<input id="newSomethingData" name="newSomethingData"
+							type="text" data-ng-model="newSomething.data"
+							class="form-control"/>
+					</div>
+					<button type="submit" class="btn btn-default">
+						<i class="glyphicon glyphicon-plus"></i> Add this
+					</button>
+				</form>
 			</div>
-			<button type="submit" class="btn btn-default">
-				<i class="glyphicon glyphicon-plus"></i> Add this
-			</button>
-		</form>
-	</div></div>
-
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			Your Somethings
-			<span class="pull-right">
-				<button type="submit" class="btn btn-default btn-xs"
-					data-ng-click="clearSomethings()">
-					<i class="glyphicon glyphicon-remove"></i> Clear list
-				</button>
-			</span>
 		</div>
-		<div class="panel-body">
-			<ul>
-				<li data-ng-repeat="something in somethings">{{ something }}</li>
-			</ul>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Your Somethings
+				<span class="pull-right">
+					<button type="submit" class="btn btn-default btn-xs"
+						data-ng-click="clearSomethings()">
+						<i class="glyphicon glyphicon-remove"></i> Clear list
+					</button>
+				</span>
+			</div>
+			<div class="panel-body">
+				<ul>
+					<li data-ng-repeat="something in somethings">
+						{{ something }}
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>

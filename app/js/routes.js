@@ -5,5 +5,10 @@ yatta.config(function ($routeProvider) {
 				controller: 'SomethingController',
 				templateUrl: 'app/partials/main.html'
 			})
+		.when('/iedata',
+			{
+				controller: 'SomethingController',
+				templateUrl: 'app/partials/iedata.html'
+			})
 		.otherwise({redirectTo: '/'});
 });
