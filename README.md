@@ -1,4 +1,9 @@
 # YATTA
+
+**Notice:** At the moment I'm just playing around with AngularJS to get myself
+comfortable. It doesn't implement anything useful yet. This note will dissapear
+with a v0.1-release.
+
 *Yet Another Time Tracker (in AngularJS)*, or
 [YATTA](http://www.youtube.com/watch?v=rW6M8D41ZWU) for short.
 
