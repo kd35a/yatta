@@ -5,7 +5,7 @@ var app = express();
 app.use(logfmt.requestLogger());
 
 app.configure(function () {
-  app.use(express.static(__dirname + '/'));
+  app.use(express.static(__dirname + '/app'));
 });
 
 var port = Number(process.env.PORT || 5000);
