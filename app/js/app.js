@@ -1,1 +1,1 @@
-var yatta = angular.module('yatta', []);
+var yatta = angular.module('yatta', ['ngRoute']);
