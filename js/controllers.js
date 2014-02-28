@@ -1,4 +1,4 @@
-timeAngle.controller('SomethingController', function ($scope, Somethings) {
+yatta.controller('SomethingController', function ($scope, Somethings) {
 	$scope.somethings = Somethings.get();
 
 	$scope.addSomething = function () {

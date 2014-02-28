@@ -1,4 +1,4 @@
-timeAngle.factory('Somethings', function () {
+yatta.factory('Somethings', function () {
 	var factory = {};
 
 	factory.get = function () {

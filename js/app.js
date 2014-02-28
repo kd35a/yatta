@@ -1,1 +1,1 @@
-var timeAngle = angular.module('timeAngle', []);
+var yatta = angular.module('yatta', []);
